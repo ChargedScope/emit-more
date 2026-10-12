@@ -45,7 +45,7 @@ ul li a:hover {
 <script data-goatcounter="https://emitmore.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script>
 window.addEventListener("load", function () {
-    fetch("https://emitmore.goatcounter.com/counter//.json")
+    fetch("https://emitmore.goatcounter.com/counter/TOTAL.json")
       .then(function (r) { return r.json(); })
       .then(function (d) {
         document.getElementById("gc-visitors").textContent = d.count_unique;
