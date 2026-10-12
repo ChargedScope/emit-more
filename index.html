@@ -48,7 +48,7 @@ window.addEventListener("load", function () {
     fetch("https://emitmore.goatcounter.com/counter/TOTAL.json")
       .then(function (r) { return r.json(); })
       .then(function (d) {
-        document.getElementById("gc-visitors").textContent = "Unique Visitor Count: ", d.count_unique;
+        document.getElementById("gc-visitors").textContent = "Unique Visitor Count: "+ d.count_unique;
       });
   });
 </script>
