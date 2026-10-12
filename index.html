@@ -44,13 +44,16 @@ ul li a:hover {
 </style>
 <script data-goatcounter="https://emitmore.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script>
-  window.goatcounter.visit_count({append: 'ul'})
+   fetch("https://emitmore.goatcounter.com/counter/TOTAL.json")
+    .then(r => r.json())
+    .then(d => document.getElementById("gc-visitors").textContent = d.count_unique);
 </script>
     <title>Emit More</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 <link rel="manifest" href="/images/site.webmanifest">
+<a id='gc-visitors'>count</a>
 </head>
 <body>
 
