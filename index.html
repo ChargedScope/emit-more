@@ -44,9 +44,13 @@ ul li a:hover {
 </style>
 <script data-goatcounter="https://emitmore.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script>
-   fetch("https://emitmore.goatcounter.com/counter/TOTAL.json")
-    .then(r => r.json())
-    .then(d => document.getElementById("gc-visitors").textContent = d.count_unique);
+window.addEventListener("load", function () {
+    fetch("https://emitmore.goatcounter.com/counter//.json")
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        document.getElementById("gc-visitors").textContent = d.count_unique;
+      });
+  });
 </script>
     <title>Emit More</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
