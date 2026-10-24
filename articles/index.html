@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #001e14;
+  color: white;
+  font-family: Verdana;
+}
+
+h1{
+  text-align: center;
+}
+  
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+ul a#gc-visitors {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #006400;
+}
+</style>
+<script data-goatcounter="https://emitmore.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+window.addEventListener("load", function () {
+    fetch("https://emitmore.goatcounter.com/counter/TOTAL.json")
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        document.getElementById("gc-visitors").textContent = "Unique Visitor Count: "+ d.count_unique;
+      });
+  });
+</script>
+    <title>Emit More</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.emitmore.org/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.emitmore.org/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.emitmore.org/images/favicon-16x16.png">
+<link rel="manifest" href="https://www.emitmore.org/images/site.webmanifest">
+</head>
+<body>
+
+<ul>
+  <li><a href="/"><img src="https://www.emitmore.org/images/emitmorelogo.png" width="20" height="20"></a></li>
+  <li><a href="https://www.emitmore.org/">Home</a></li>
+  <li><a href="https://www.emitmore.org/articles">Articles</a></li>
+  <li><a href="https://www.emitmore.org/opinions">Opinions</a></li>
+  <li><a href="https://www.emitmore.org/contact">Contact</a></li>
+  <li><a href="https://www.emitmore.org/about">About</a></li>
+  <a id="gc-visitors">Unique Visitor Count: </a>
+  I Hate France
+</body>
+</html>
